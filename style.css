@@ -1,0 +1,118 @@
+:root {
+  --primary: #F1F6F9;
+  --second: #394867;
+  --thrird: #567DCF;
+  --aksenG: #212A3E;
+  --aksenC: #9BA4B5;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background: var(--aksenC);
+}
+/*NAVBAR*/
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--second);
+  padding: 0 75px;
+}
+.logo {
+  font-size: 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+span {
+  color: var(--thrird);
+}
+.navbar ul  {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+.navbar ul li a {
+  display: flex;
+  font-size: 23px;
+  color: white;
+  padding: 5px 20px;
+  justify-items: center;
+  font-family:'Barlow Condensed', sans-serif;
+  transition: 0.5s ease;
+  border-radius:50px; 
+}
+.navbar ul li a:hover {
+  transition: 0.5s ease;
+  text-decoration: underline;
+  transform: scale(1.3);
+  color: var(--thrird);
+}
+/* navbar END */
+
+section {
+  display: flex;
+  background: var(--aksenC);
+}
+.text {
+  padding: 6rem 4rem;
+  font-size: 30px;
+  font-family:'Barlow Condensed', sans-serif;
+}
+section .text h2 {
+  color: white;
+}
+section .text p {
+  color: var(--second);
+  padding-bottom: 20px;
+}
+section .text .btn {
+  border-radius:30px;
+  margin-left: 3rem;
+  padding: 0px 20px 5px;
+  background: var(--primary);
+  color: var(--thrird);
+  justify-content: center;
+  font-weight: bold;
+}
+spanx {
+  color: var(--second);
+}
+/* HOME END */
+
+/* Content */
+.menutiket {
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--primary);
+  font-size: 30px;
+  background: var(--second);
+  padding: 20px 0 20px 0;
+  transition: 0.5s ease;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  margin: 10px;
+}
+.content img{
+  width: 200px;
+  height: 200px;
+}
+#content:hover {
+  border-radius: 10px;
+  background: var(--primary);
+  margin-right: 8rem;
+   margin-left: 8rem;
+   transition: 0.5s ease;
+   color: var(--second);
+}
